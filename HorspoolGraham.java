@@ -33,10 +33,14 @@ public class HorspoolMapGraham {
 		while (sc.hasNextLine()) {
 			HashMap<Character, Integer> bmt = new HashMap<Character, Integer>(); // create hashmap to make bmt
 			
-			while ((text = sc.nextLine()).isEmpty()) { // loops through the input file 
-			}
-			while ((pattern = sc.nextLine()).isEmpty()) {
-			} 
+			text = sc.nextLine();
+			while (text.isEmpty()) {
+				text = sc.nextLine();
+			} // can also be just written as: while((text = sc.nextLine()).isEmpty()) {}
+			pattern = sc.nextLine();
+			while (pattern.isEmpty()) {
+				pattern = sc.nextLine();
+			} // same at this line
 
 			numCharT = text.length(); // set lengths
 			numCharP = pattern.length();
